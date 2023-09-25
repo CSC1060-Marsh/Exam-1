@@ -8,7 +8,19 @@ public class TenMaker {
         double firstInt = sc.nextDouble();
         System.out.println("Please enter the second integer.");
         double secondInt = sc.nextDouble();
+        if (makes10(firstInt, secondInt) == true) {
+            System.out.println("Yay! Your two numbers add up to 10!");
+        } else {
+            System.out.println("I regret to inform you that your numbers do not add up to 10.");
+        }
     }
 
-    public static int makes10()
+    public static boolean makes10(double firstInt, double secondInt) {
+        double combinedNumber = firstInt + secondInt;
+        if (combinedNumber == 10) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
