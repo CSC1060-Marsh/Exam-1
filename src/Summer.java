@@ -41,6 +41,6 @@ public class Summer {
             inputNumber = sc.nextDouble();
         }
         //This prints out the termination message when the "while" loop is done executing.
-        System.out.println("Your final sum is " + secondNumber + ". This program will now terminate.");
+        System.out.println("Your final sum is " + secondNumber + ". This program will now terminate since you input '0'.");
     }
 }
